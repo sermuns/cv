@@ -31,5 +31,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          path: *.pdf
+          path: "*.pdf"
           compression-level: 0
