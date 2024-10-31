@@ -19,17 +19,19 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v4
       - name: Cache typst
+        id: cache-typst
         uses: actions/cache@v4
         with:
           path: /usr/local/bin/typst
           key: ${{ runner.os }}-typst
       - name: Install typst
+        if: steps.cache-typst.outputs.cache-hit != 'true'
         run: |
           wget https://github.com/typst/typst/releases/download/v0.12.0/typst-x86_64-unknown-linux-musl.tar.xz
           tar xvf typst-x86_64-unknown-linux-musl.tar.xz
           sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin
       - name: Build PDF
-        run: typst compile cv.typ
+        run: typst compile cv.typ --font-dir fonts
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
