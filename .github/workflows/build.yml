@@ -31,7 +31,7 @@ jobs:
           tar xvf typst-x86_64-unknown-linux-musl.tar.xz
           sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin
       - name: Build PDF
-        run: typst compile cv.typ --font-dir fonts
+        run: typst compile cv.typ --font-path fonts
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
