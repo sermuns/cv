@@ -5,7 +5,7 @@
   )
   set page(
     paper: "a4",
-    margin: 5em,
+    margin: 2cm,
   )
   set text(
     font: "New Computer Modern Mono",
@@ -17,7 +17,7 @@
     leading: 0.8em,
     spacing: 1em,
   )
-  show link: text.with(fill: rgb(150, 50, 0))
+  show link: underline
   it
 }
 
@@ -29,5 +29,5 @@
 }
 
 #let p = it => {
-  pad(left: 0.5em, it)
+  pad(left: 0.5em, rest: 0.2em, it)
 }
