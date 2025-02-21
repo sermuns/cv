@@ -8,16 +8,19 @@
     margin: 2cm,
   )
   set text(
-    font: "New Computer Modern Mono",
+    font: "New Computer Modern Sans",
     lang: "sv",
   )
-  
+
   set grid(row-gutter: 2em)
   set par(
     leading: 0.8em,
     spacing: 1em,
   )
-  show link: underline
+  show link: it => {
+    set text(blue.darken(30%))
+    underline(it)
+  }
   it
 }
 
