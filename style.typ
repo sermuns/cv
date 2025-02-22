@@ -8,27 +8,27 @@
     margin: 2cm,
   )
   set text(
-    font: "New Computer Modern Sans",
+    font: "Metropolis",
     lang: "sv",
   )
 
-  set grid(row-gutter: 2em)
+  show heading.where(level: 2): text.with(black.lighten(20%))
+
+  // set grid(row-gutter: 2em)
   set par(
     leading: 0.8em,
     spacing: 1em,
   )
   show link: it => {
-    set text(blue.darken(30%))
+    set text(fill: blue.darken(30%))
     underline(it)
   }
+
   it
 }
 
 #let inl-img(src) = {
-  box(
-    height: 0.5em,
-    align(horizon, image(src, height: 1.5em)),
-  )
+  box(image(src, height: 1.3em))
 }
 
 #let p = it => {
