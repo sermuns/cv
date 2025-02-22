@@ -5,7 +5,10 @@
   )
   set page(
     paper: "a4",
-    margin: 2cm,
+    margin: (
+      y: 1cm,
+      x: 2cm,
+    ),
   )
   set text(
     font: "Metropolis",

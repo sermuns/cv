@@ -7,7 +7,7 @@
   text(2em)[*Samuel Åkesson*]
   h(1fr)
   grid(
-    align: right + horizon,
+    align: left + horizon,
     columns: 2,
     row-gutter: 5pt,
     column-gutter: 1em,
