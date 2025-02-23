@@ -13,7 +13,10 @@
   set text(
     font: "Metropolis",
     lang: "sv",
+    size: 11pt,
   )
+  show link: text.with(weight: 600)
+  // show raw: set text(size: 10pt)
 
   show heading.where(level: 2): text.with(black.lighten(20%))
 
@@ -31,7 +34,7 @@
 }
 
 #let inl-img(src) = {
-  box(image(src, height: 1.3em))
+  box(baseline: 22%, image(src, height: 1.3em))
 }
 
 #let p = it => {

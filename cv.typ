@@ -3,13 +3,16 @@
 #{
   set par(spacing: 10pt)
   show grid: box
+  show image: box
 
+  image("jag.jpg", width: 6em)
+  h(1fr)
   text(2em)[*Samuel Åkesson*]
   h(1fr)
   grid(
     align: left + horizon,
     columns: 2,
-    row-gutter: 5pt,
+    row-gutter: 13pt,
     column-gutter: 1em,
     image("phone-svgrepo-com.svg", height: 1em), "072 205 83 84",
     image("mail-svgrepo-com.svg", height: 1em), "samuel.akesson@bolmso.se",
@@ -20,14 +23,9 @@
   line(length: 100%)
 }
 #set grid(
-  inset: (y: 1em),
+  row-gutter: 2em,
   columns: (1fr, 3fr),
-  // align: (x, y) => {
-  //   if x == 1 { return left }
-  //   left
-  // },
 )
-// #set par(spacing: 1em)
 
 = Kort om mig
 Jag studerar just nu mitt tredje år av civilingenjör i datateknik på Linköpings universitet. På min fritid håller jag för det mesta på med programmeringsprojekt. När jag kan, spelar jag musik (med mitt band #link("https://open.spotify.com/artist/5yXcXACdusyyXLrYX5S36x", "Skaran")).
@@ -46,53 +44,59 @@ Vad motiverar mig? Projekt som känns meningsfulla, och speciellt när jag känn
   [
     *Tidsredovisningssystem för Digitaliseringsavdelningen på LiU*
 
-    Som kandidatarbete utvecklar vi i grupp ett storskaligt mjukvarusystem för universitetet. Som konfigurationsansvarig ser jag till att projektets
+    Skapar storskaligt mjukvarusystem för universitetet inom kandidatarbetet. Som konfigurationsansvarig stöttar jag mina medlemmar med utvecklarmiljö och sätter upp CI/CD-flöden.
+  ],
+
+  [dec 2024 - jan 2025],
+  [
+    #link("https://samake.se/checkboxes")[128 checkboxes]
+
+    Hemsida som efterliknar "One Million Checkboxes". Jag skapade den mest för att lära mig om Go på backend.
   ],
 
   [dec 2024 - nu],
   [
-    #link("https://github.com/sermuns/schemgo")[*schemgo*]
+    #link("https://github.com/sermuns/schemgo")[schemgo]
 
-    Ett open-source projekt som jag driver. Det började med att jag var frustrerad med alternativen som fanns för att generera elektriska kretsdiagram från kod.
-
+    Open-source projekt som jag driver. Jag var frusterad med befintliga alternativ för att generera elektriska kretsdiagram från kod, så jag uppfann ett eget verktyg. Fortfarande under uppbyggnad.
   ],
 
   [okt 2024 - jan 2025],
   [
     *Kartläggningsrobot*
 
-    Utvecklade i grupp en robot som autonomt kartlägger rum som en del av kursen #link("https://studieinfo.liu.se/kurs/TSEA29/#syllabus")[Konstruktion med mikrodatorer].
+    Skapade i grupp en robot som autonomt kartlägger rum. Projektarbete som del av kursen #link("https://studieinfo.liu.se/kurs/TSEA29/#syllabus")[Konstruktion med mikrodatorer].
   ],
 
   [feb 2024 - maj 2024],
   [
     *Egenbyggd processor*
 
-    I kursen #link("https://studieinfo.liu.se/kurs/tsea83/vt-2018#syllabus", "Datorkonstruktion") skapade jag tillsammans med gruppen en processor från grunden i `VHDL`, och utvecklade ett eget assembly-liknande språk med tillhörande VS Code extension för att ge syntax highlighting.
+    I kursen #link("https://studieinfo.liu.se/kurs/tsea83/vt-2018#syllabus", "Datorkonstruktion") designade och implementerade gruppen en processor från grunden i VHDL. Till processorn utvecklade jag ett assembly-liknande språk med tillhörande kompilator skriven i Python, och VS Code-tillägg för syntax highlighting.
   ],
 
   [okt 2023 - dec 2023],
   [
     #link("https://un.samake.se")[un.samake.se]
 
-    Byggde en hemsida där LiU-studenter kan se hur många föreläsningar/lektioner/m.m. som har passerat i en viss kurs!
+    Hemsida som skrapar universitets schema-API. På hemsidan kan LiU-studenter kan se hur många föreläsningar/lektioner/m.m. som har passerat i en viss kurs.
   ],
 )
 
 #pagebreak()
 = Kompetenser
-#pad(left: 1.5em)[
+#pad(left: 1em)[
   == Programmeringsspråk/teknologier
 
-  - _Python_ är högst upp i min verktygslåda när jag snabbt vill lösa ett problem.
+  - _Python_ är högst upp i min verktygslåda när jag snabbt vill lösa problem.
 
-  - _Go_ stötte jag på, blev förälskad i, och har använt det i nästan alla mina sidoprojekt sedan dess.
+  - _Go_ stötte jag på förra året och blev förälskad i. Jag har använt det i nästan alla mina sidoprojekt sedan dess.
 
   - _C_ använder jag flitigt för mina hårdvaruprojekt med mikrokontrollrar.
 
   - _HTML_ och _CSS_ är jag väldigt bekväm med och har skapat flertalet hemsidor från grunden.
 
-  - docker använder jag regelbundet. Driver ett hemlabb med tjänster som är orkestrerade genom `docker compose`.
+  - _docker_ är jag väldigt bekväm med, använder ofta i sidoprojekt. Driver ett hemlabb med tjänster som är orkestrerade genom `docker compose`.
 
   == Människospråk
   - Svenska, modersmål
@@ -113,7 +117,11 @@ Vad motiverar mig? Projekt som känns meningsfulla, och speciellt när jag känn
   [
     *Lärare, MTU - Mediagymnasiet, Linköping*
 
-    Undervisar Mekatronik 1 på gymnasiet. Ansvarar för lektionsplanering, utformning av kurslitteratur och examinationsmoment samt handleder eleverna genom praktiska moment. Har designat en hemsida med #link("https://mek.samake.se/","digital kurslitteratur och uppgifter från grunden"). Här använder jag mina kompetenser inom digitalteknik, mikroprocessorer och elektronik.
+    Undervisar Mekatronik 1 på gymnasiet. Här använder jag mina kompetenser inom digitalteknik, mikroprocessorer och elektronik.
+
+    - Ansvarar för lektionsplanering, innehåll av kurslitteratur och examinationsmoment.
+    - Handleder eleverna genom praktiska moment.
+    - Har designat en hemsida med #link("https://mek.samake.se/","digital kurslitteratur och uppgifter från grunden").
   ],
 
   [okt 2021 - nu],
