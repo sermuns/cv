@@ -1,36 +1,42 @@
 #import "style.typ": *
 #show: style
+#set page(numbering: "1 / 1")
 #{
-  set par(spacing: 10pt)
+  set par(spacing: 1em)
   show grid: box
   show image: box
 
-  image("jag.jpg", width: 6em)
-  h(1fr)
-  text(2em)[*Samuel Åkesson*]
-  h(1fr)
-  grid(
-    align: left + horizon,
-    columns: 2,
-    row-gutter: 13pt,
-    column-gutter: 1em,
-    image("phone-svgrepo-com.svg", height: 1em), "072 205 83 84",
-    image("mail-svgrepo-com.svg", height: 1em), "samuel.akesson@bolmso.se",
-    image("github-mark.svg", height: 1em),
-    link("https://github.com/sermuns", "github.com/sermuns"),
+  box(
+    height: 6em,
+    {
+      text(2em)[*Samuel Åkesson*]
+      h(1fr)
+      image("jag.jpg", height: 100%)
+      h(1fr)
+      grid(
+        align: left + horizon,
+        columns: 2,
+        row-gutter: 1fr,
+        column-gutter: 1em,
+        image("phone-svgrepo-com.svg", height: 1em), "072 205 83 84",
+        image("mail-svgrepo-com.svg", height: 1em), "samuel.akesson@bolmso.se",
+        image("github-mark.svg", height: 1em),
+        link("https://github.com/sermuns", "github.com/sermuns"),
+      )
+    },
   )
 
   line(length: 100%)
 }
 #set grid(
-  row-gutter: 2em,
+  row-gutter: 1.5em,
   columns: (1fr, 3fr),
 )
 
 = Kort om mig
-Jag studerar just nu mitt tredje år av civilingenjör i datateknik på Linköpings universitet. På min fritid håller jag för det mesta på med programmeringsprojekt. När jag kan, spelar jag musik (med mitt band #link("https://open.spotify.com/artist/5yXcXACdusyyXLrYX5S36x", "Skaran")).
+Studerar just mitt tredje år civilingenjör i datateknik på Linköpings universitet. På min fritid håller jag för det mesta på med programmeringsprojekt. När jag kan, spelar jag musik med mitt band #link("https://open.spotify.com/artist/5yXcXACdusyyXLrYX5S36x", "Skaran").
 
-Vad motiverar mig? Projekt som känns meningsfulla, och speciellt när jag känner att jag förbättrar livet (för mig och andra). Jag tycker det är en fantastisk känsla att skapa robusta system som underlättar och automatiserar tråkiga sysslor. Det är även därför jag valde min utbildning.
+Vad motiverar mig? Projekt som känns meningsfulla, speciellt när jag känner att jag förbättrar livet (för mig och andra). Jag tycker det är fantastiskt att skapa robusta system som underlättar och automatiserar tråkiga sysslor. Detta är också anledningen till varför jag valde min utbildning.
 
 = Utbildning <utbildning>
 #grid(
@@ -45,6 +51,15 @@ Vad motiverar mig? Projekt som känns meningsfulla, och speciellt när jag känn
     *Tidsredovisningssystem för Digitaliseringsavdelningen på LiU*
 
     Skapar storskaligt mjukvarusystem för universitetet inom kandidatarbetet. Som konfigurationsansvarig stöttar jag mina medlemmar med utvecklarmiljö och sätter upp CI/CD-flöden.
+  ],
+
+  [maj 2024 - nu],
+  [
+    #link("https://www.lysator.liu.se/")[
+      #inl-img("lyslogo.svg") Datorföreningen Lysator
+    ]
+
+    Sekreterare i styrelsen, ansvarig för hemsidan och delansvarig för projektet #link("https://www.lysator.liu.se/upplysning/")[UppLYSning].
   ],
 
   [dec 2024 - jan 2025],
@@ -73,6 +88,7 @@ Vad motiverar mig? Projekt som känns meningsfulla, och speciellt när jag känn
     *Egenbyggd processor*
 
     I kursen #link("https://studieinfo.liu.se/kurs/tsea83/vt-2018#syllabus", "Datorkonstruktion") designade och implementerade gruppen en processor från grunden i VHDL. Till processorn utvecklade jag ett assembly-liknande språk med tillhörande kompilator skriven i Python, och VS Code-tillägg för syntax highlighting.
+    #v(1fr)
   ],
 
   [okt 2023 - dec 2023],
@@ -83,7 +99,6 @@ Vad motiverar mig? Projekt som känns meningsfulla, och speciellt när jag känn
   ],
 )
 
-#pagebreak()
 = Kompetenser
 #pad(left: 1em)[
   == Programmeringsspråk/teknologier
@@ -106,13 +121,6 @@ Vad motiverar mig? Projekt som känns meningsfulla, och speciellt när jag känn
 
 = Yrkeserfarenhet
 #grid(
-  [maj 2024 - nu],
-  [
-    #inl-img("lyslogo.svg") *Datorföreningen Lysator*
-
-    Sekreterare i styrelsen, ansvarig för hemsidan och delansvarig för projektet #link("https://www.lysator.liu.se/upplysning/", "UppLYSning").
-  ],
-
   [feb 2023 - nu],
   [
     *Lärare, MTU - Mediagymnasiet, Linköping*
@@ -142,7 +150,7 @@ Vad motiverar mig? Projekt som känns meningsfulla, och speciellt när jag känn
   [
     *Projektmedarbetare, Bolmsö sockenråd, Bolmsö*
 
-    Var invald styrelseledamot. Initierade och fullbordade projekt att övergå till WordPress för hemsidan. Se resultatet på #link("https://bolmso.se", [bolmso.se]).
+    Var invald styrelseledamot. Initierade och fullbordade projekt att övergå till WordPress för #link("https://bolmso.se")[hemsidan].
   ],
 )
 

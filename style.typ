@@ -1,4 +1,4 @@
-#let style(it) = {
+#let style(body) = {
   set document(
     title: [CV Samuel Åkesson],
     author: "Samuel Åkesson",
@@ -6,7 +6,7 @@
   set page(
     paper: "a4",
     margin: (
-      y: 1cm,
+      y: 1.5cm,
       x: 2cm,
     ),
   )
@@ -26,11 +26,11 @@
     spacing: 1em,
   )
   show link: it => {
-    set text(fill: blue.darken(30%))
+    set text(fill: blue.darken(60%))
     underline(it)
   }
 
-  it
+  body
 }
 
 #let inl-img(src) = {
