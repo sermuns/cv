@@ -1,6 +1,36 @@
-#import "style.typ": *
-#show: style
+#let inl-img(src) = {
+  box(baseline: 22%, image(src, height: 1.3em))
+}
+
 #set page(numbering: "1 / 1")
+#set document(
+  title: [CV Samuel Åkesson],
+  author: "Samuel Åkesson",
+)
+#set page(
+  paper: "a4",
+  margin: (
+    y: 1.5cm,
+    x: 2cm,
+  ),
+)
+#set text(
+  font: "Metropolis",
+  lang: "sv",
+  size: 11pt,
+)
+#show link: text.with(weight: 600)
+
+#show heading.where(level: 2): text.with(black.lighten(20%))
+
+#set par(
+  leading: 0.8em,
+  spacing: 1em,
+)
+#show link: it => {
+  set text(fill: blue.darken(60%))
+  underline(it)
+}
 #{
   set par(spacing: 1em)
   show grid: box
@@ -11,16 +41,18 @@
     {
       text(2em)[*Samuel Åkesson*]
       h(1fr)
-      image("jag.jpg", height: 100%)
+      image("media/jag.jpg", height: 100%)
       h(1fr)
       grid(
         align: left + horizon,
         columns: 2,
         row-gutter: 1fr,
         column-gutter: 1em,
-        image("phone-svgrepo-com.svg", height: 1em), "072 205 83 84",
-        image("mail-svgrepo-com.svg", height: 1em), "samuel.akesson@bolmso.se",
-        image("github-mark.svg", height: 1em),
+        image("media/phone-svgrepo-com.svg", height: 1em), "072 205 83 84",
+        image("media/mail-svgrepo-com.svg", height: 1em),
+        "samuel.akesson@bolmso.se",
+
+        image("media/github-mark.svg", height: 1em),
         link("https://github.com/sermuns", "github.com/sermuns"),
       )
     },
@@ -28,6 +60,7 @@
 
   line(length: 100%)
 }
+
 #set grid(
   row-gutter: 1.5em,
   columns: (1fr, 3fr),
@@ -56,7 +89,7 @@ Vad motiverar mig? Projekt som känns meningsfulla, speciellt när jag känner a
   [maj 2024 - nu],
   [
     #link("https://www.lysator.liu.se/")[
-      #inl-img("lyslogo.svg") Datorföreningen Lysator
+      #inl-img("media/lyslogo.svg") Datorföreningen Lysator
     ]
 
     Sekreterare i styrelsen, ansvarig för hemsidan och delansvarig för projektet #link("https://www.lysator.liu.se/upplysning/")[UppLYSning].
