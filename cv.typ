@@ -4,8 +4,8 @@
 
 #set page(numbering: "1 / 1")
 #set document(
-  title: [CV Samuel Åkesson],
-  author: "Samuel Åkesson",
+  title: [CV Lilla Pápai],
+  author: "Lilla Pápai",
 )
 #set page(
   paper: "a4",
@@ -37,23 +37,18 @@
   show image: box
 
   box(
-    height: 6em,
+    height: 3em,
     {
-      text(2em)[*Samuel Åkesson*]
-      h(1fr)
-      image("media/jag.jpg", height: 100%)
+      text(2em)[*Lilla Pápai*]
       h(1fr)
       grid(
         align: left + horizon,
         columns: 2,
         row-gutter: 1fr,
         column-gutter: 1em,
-        image("media/phone-svgrepo-com.svg", height: 1em), "072 205 83 84",
+        image("media/phone-svgrepo-com.svg", height: 1em), "072 717 23 45",
         image("media/mail-svgrepo-com.svg", height: 1em),
-        "samuel.akesson@bolmso.se",
-
-        image("media/github-mark.svg", height: 1em),
-        link("https://github.com/sermuns", "github.com/sermuns"),
+        "lilpa442@student.liu.se",
       )
     },
   )
@@ -73,119 +68,78 @@ Vad motiverar mig? Projekt som känns meningsfulla, speciellt när jag känner a
 
 = Utbildning <utbildning>
 #grid(
-  [aug 2022 - nu], [*Civilingenjör datateknik, Linköpings universitet*],
+  [aug 2023 - nu], [*Civilingenjör i energi-miljö-managemenent, Linköpings universitet*],
   [aug 2018 - juni 2021], [*Teknikprogrammet, Sunnerbogymnasiet*],
 )
 
 = Projekt
 #grid(
-  [jan 2025 - nu],
+  [jan 2025 - mars 2025],
   [
-    *Tidsredovisningssystem för Digitaliseringsavdelningen på LiU*
+    *Företagsanalys, hållbarhet och management*
 
-    Skapar storskaligt mjukvarusystem för universitetet inom kandidatarbetet. Som konfigurationsansvarig stöttar jag mina medlemmar med utvecklarmiljö och sätter upp CI/CD-flöden.
+    #lorem(20)
   ],
-
-  [maj 2024 - nu],
+  [jan 2025 - mars 2025],
   [
-    #link("https://www.lysator.liu.se/")[
-      #inl-img("media/lyslogo.svg") Datorföreningen Lysator
-    ]
+    *Simulering och optimering av ett kombikraftverk*
 
-    Sekreterare i styrelsen, ansvarig för hemsidan och delansvarig för projektet #link("https://www.lysator.liu.se/upplysning/")[UppLYSning].
+    #lorem(20)
   ],
-
-  [dec 2024 - jan 2025],
-  [
-    #link("https://samake.se/checkboxes")[128 checkboxes]
-
-    Hemsida som efterliknar "One Million Checkboxes". Jag skapade den mest för att lära mig om Go på backend.
-  ],
-
-  [dec 2024 - nu],
-  [
-    #link("https://github.com/sermuns/schemgo")[schemgo]
-
-    Open-source projekt som jag driver. Jag var frusterad med befintliga alternativ för att generera elektriska kretsdiagram från kod, så jag uppfann ett eget verktyg. Fortfarande under uppbyggnad.
-  ],
-
   [okt 2024 - jan 2025],
   [
-    *Kartläggningsrobot*
+    *Katapult*
 
-    Skapade i grupp en robot som autonomt kartlägger rum. Projektarbete som del av kursen #link("https://studieinfo.liu.se/kurs/TSEA29/#syllabus")[Konstruktion med mikrodatorer].
+    #lorem(20)
   ],
-
-  [feb 2024 - maj 2024],
+  [nov 2023 - jan 2024],
   [
-    *Egenbyggd processor*
+    *Livscykelanalys*
 
-    I kursen #link("https://studieinfo.liu.se/kurs/tsea83/vt-2018#syllabus", "Datorkonstruktion") designade och implementerade gruppen en processor från grunden i VHDL. Till processorn utvecklade jag ett assembly-liknande språk med tillhörande kompilator skriven i Python, och VS Code-tillägg för syntax highlighting.
-    #v(1fr)
-  ],
-
-  [okt 2023 - dec 2023],
-  [
-    #link("https://un.samake.se")[un.samake.se]
-
-    Hemsida som skrapar universitets schema-API. På hemsidan kan LiU-studenter kan se hur många föreläsningar/lektioner/m.m. som har passerat i en viss kurs.
+    #lorem(20)
   ],
 )
 
-= Kompetenser
-#pad(left: 1em)[
-  == Programmeringsspråk/teknologier
 
-  - _Python_ är högst upp i min verktygslåda när jag snabbt vill lösa problem.
-
-  - _Go_ stötte jag på förra året och blev förälskad i. Jag har använt det i nästan alla mina sidoprojekt sedan dess.
-
-  - _C_ använder jag flitigt för mina hårdvaruprojekt med mikrokontrollrar.
-
-  - _HTML_ och _CSS_ är jag väldigt bekväm med och har skapat flertalet hemsidor från grunden.
-
-  - _docker_ är jag väldigt bekväm med, använder ofta i sidoprojekt. Driver ett hemlabb med tjänster som är orkestrerade genom `docker compose`.
-
-  == Människospråk
-  - Svenska, modersmål
-  - Engelska, flytande
-  - Tyska, goda kunskaper
-]
-
-= Yrkeserfarenhet
+= Erfarenhet
 #grid(
-  [feb 2023 - nu],
+  [juli 2023 - sept 2023],
   [
-    *Lärare, MTU - Mediagymnasiet, Linköping*
+    *Paketerare, PostNord Strålfors*
 
-    Undervisar Mekatronik 1 på gymnasiet. Här använder jag mina kompetenser inom digitalteknik, mikroprocessorer och elektronik.
-
-    - Ansvarar för lektionsplanering, innehåll av kurslitteratur och examinationsmoment.
-    - Handleder eleverna genom praktiska moment.
-    - Har designat en hemsida med #link("https://mek.samake.se/","digital kurslitteratur och uppgifter från grunden").
+    Paketerade värdeklassade varor.
   ],
 
-  [okt 2021 - nu],
+  [juni 2021 - jan 2022],
   [
-    *Enskild firma, Samuel Åkesson, Linköping*
+    *Lagermedarbetare, PostNord TPL*
 
-    Har genomfört små videoproduktionsjobb när jag har tid. Exempelvis producerat #link("https://youtu.be/6crEb-zywoE", "marknadsföringsfilmer för Discgolf Värnamo") och #link("https://youtu.be/niDWR77UgDo", "musikvideo för bandet Island Country").
+    Granskade och hanterade returvaror.
   ],
 
-  [juni 2020 - juni 2024],
+  [juli 2020 - aug 2020],
   [
-    *IT-drift, Campus Värnamo, Värnamo*
+    *Projektmedarbetare, Ljungby kommun*
 
-    Återkommande sommaruppdrag att formatera lånade studentdatorer. Efter varje sommar hade jag uppdaterat skripten som körs på varje nyformaterad dator så att ännu större del av processen automatiseras. Man kan säga att jag gjorde mig själv obsolet.
+    Jobbade i små team, där vi bland annat:
+    - Diskuterade frågor kring demokrati
+    - Fick grundutbildning i ledarskap
+    - Diskuterade samhällsfrågor
+    - Skrev ihop en tjänsteskrivelse till kommunpolitikerna angående en kommun-app som vi själva designade
   ],
 
-  [maj 2021 - maj 2023],
+  [juni 2019 - juli 2019],
   [
-    *Projektmedarbetare, Bolmsö sockenråd, Bolmsö*
+    *Kökspersonal*
 
-    Var invald styrelseledamot. Initierade och fullbordade projekt att övergå till WordPress för #link("https://bolmso.se")[hemsidan].
+    Ansvarade för att servera mat på äldreboende, där en del hade specialbehov som krävde extra uppmärksamhet. Ansvarade allmänt för att hålla köket städat, och redo för nästa måltid.
   ],
 )
+
+= Språk
+- Svenska, modersmål
+- Ungerska, modersmål
+- Engelska, flytande
 
 #v(1fr)
 #align(center)[
