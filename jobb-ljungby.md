@@ -1,6 +1,6 @@
-- Nordlo
-- Kalmar
-- Atea
-- Consid
-- Strålfors
-- CTC
+- [x] Nordlo
+- [ ] Kalmar
+- [x] Atea
+- [x] Consid
+- [x] Strålfors
+- [ ] CTC

@@ -2,13 +2,13 @@
   box(baseline: 22%, image(src, height: 1.3em))
 }
 
-#set page(numbering: "1 / 1")
 #set document(
   title: [CV Samuel Åkesson],
   author: "Samuel Åkesson",
 )
 #set page(
   paper: "a4",
+  numbering: "1 / 1",
   margin: (
     y: 1.5cm,
     x: 2cm,
@@ -31,13 +31,13 @@
   set text(fill: blue.darken(60%))
   underline(it)
 }
+
 #{
-  set par(spacing: 1em)
   show grid: box
   show image: box
 
   box(
-    height: 6em,
+    height: 5em,
     {
       text(2em)[*Samuel Åkesson*]
       h(1fr)
@@ -57,7 +57,6 @@
       )
     },
   )
-
   line(length: 100%)
 }
 
@@ -83,7 +82,7 @@ Vad motiverar mig? Projekt som känns meningsfulla, speciellt när jag känner a
   [
     *Tidsredovisningssystem för Digitaliseringsavdelningen på LiU*
 
-    Skapar storskaligt mjukvarusystem för universitetet inom kandidatarbetet. Som konfigurationsansvarig stöttar jag mina medlemmar med utvecklarmiljö och sätter upp CI/CD-flöden.
+    Skapar ett storskaligt mjukvarusystem för universitetets personal inom kandidatarbetet. Som konfigurationsansvarig stöttar jag mina medlemmar med utvecklarmiljö och sätter upp CI/CD-flöden.
   ],
 
   [maj 2024 - nu],
@@ -97,7 +96,7 @@ Vad motiverar mig? Projekt som känns meningsfulla, speciellt när jag känner a
 
   [dec 2024 - jan 2025],
   [
-    #link("https://samake.se/checkboxes")[128 checkboxes]
+    #link("https://www.lysator.liu.se/~sermuns/checkboxes/")[128 checkboxes]
 
     Hemsida som efterliknar "One Million Checkboxes". Jag skapade den mest för att lära mig om Go på backend.
   ],
@@ -126,7 +125,7 @@ Vad motiverar mig? Projekt som känns meningsfulla, speciellt när jag känner a
 
   [okt 2023 - dec 2023],
   [
-    #link("https://un.samake.se")[un.samake.se]
+    #link("http://un.samake.se")[un.samake.se]
 
     Hemsida som skrapar universitets schema-API. På hemsidan kan LiU-studenter kan se hur många föreläsningar/lektioner/m.m. som har passerat i en viss kurs.
   ],
