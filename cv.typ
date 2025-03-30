@@ -76,6 +76,43 @@ Vad motiverar mig? Projekt som känns meningsfulla, speciellt när jag känner a
   [aug 2018 - juni 2021], [*Teknikprogrammet, Sunnerbogymnasiet*],
 )
 
+= Yrkeserfarenhet
+#grid(
+  [feb 2023 - nu],
+  [
+    *Lärare, MTU - Mediagymnasiet, Linköping*
+
+    Undervisar Mekatronik 1 på gymnasiet. Här använder jag mina kompetenser inom digitalteknik, mikroprocessorer och elektronik.
+
+    - Ansvarar för lektionsplanering, innehåll av kurslitteratur och examinationsmoment.
+    - Handleder eleverna genom praktiska moment.
+    - Har designat en hemsida med #link("https://mek.samake.se/","digital kurslitteratur och uppgifter från grunden").
+  ],
+
+  [okt 2021 - nu],
+  [
+    *Enskild firma, Samuel Åkesson*
+
+    Har genomfört små videoproduktionsjobb när jag har tid. Exempelvis producerat #link("https://youtu.be/6crEb-zywoE", "marknadsföringsfilmer för Discgolf Värnamo") och #link("https://youtu.be/niDWR77UgDo", "musikvideo för bandet Island Country").
+  ],
+
+  [juni 2020 - juni 2024],
+  [
+    *IT-drift, Campus Värnamo, Värnamo*
+
+    Återkommande sommaruppdrag att formatera lånade studentdatorer. Efter varje sommar hade jag uppdaterat skripten som körs på varje nyformaterad dator så att ännu större del av processen automatiseras. Man kan säga att jag gjorde mig själv obsolet.
+  ],
+
+  [maj 2021 - maj 2023],
+  [
+    *Projektmedarbetare, Bolmsö sockenråd, Bolmsö*
+
+    Var invald styrelseledamot. Initierade och fullbordade projekt att övergå till WordPress för #link("https://bolmso.se")[hemsidan].
+  ],
+)
+
+#pagebreak()
+
 = Projekt
 #grid(
   [jan 2025 - nu],
@@ -91,7 +128,7 @@ Vad motiverar mig? Projekt som känns meningsfulla, speciellt när jag känner a
       #inl-img("media/lyslogo.svg") Datorföreningen Lysator
     ]
 
-    Sekreterare i styrelsen, ansvarig för hemsidan och delansvarig för projektet #link("https://www.lysator.liu.se/upplysning/")[UppLYSning].
+    Sekreterare i styrelsen, ansvarig för hemsidan och delansvarig för dokumentationsprojektet #link("https://lysator.liu.se/lysdocs")[LysDocs].
   ],
 
   [dec 2024 - jan 2025],
@@ -120,7 +157,6 @@ Vad motiverar mig? Projekt som känns meningsfulla, speciellt när jag känner a
     *Egenbyggd processor*
 
     I kursen #link("https://studieinfo.liu.se/kurs/tsea83/vt-2018#syllabus", "Datorkonstruktion") designade och implementerade gruppen en processor från grunden i VHDL. Till processorn utvecklade jag ett assembly-liknande språk med tillhörande kompilator skriven i Python, och VS Code-tillägg för syntax highlighting.
-    #v(1fr)
   ],
 
   [okt 2023 - dec 2023],
@@ -149,44 +185,4 @@ Vad motiverar mig? Projekt som känns meningsfulla, speciellt när jag känner a
   - Svenska, modersmål
   - Engelska, flytande
   - Tyska, goda kunskaper
-]
-
-= Yrkeserfarenhet
-#grid(
-  [feb 2023 - nu],
-  [
-    *Lärare, MTU - Mediagymnasiet, Linköping*
-
-    Undervisar Mekatronik 1 på gymnasiet. Här använder jag mina kompetenser inom digitalteknik, mikroprocessorer och elektronik.
-
-    - Ansvarar för lektionsplanering, innehåll av kurslitteratur och examinationsmoment.
-    - Handleder eleverna genom praktiska moment.
-    - Har designat en hemsida med #link("https://mek.samake.se/","digital kurslitteratur och uppgifter från grunden").
-  ],
-
-  [okt 2021 - nu],
-  [
-    *Enskild firma, Samuel Åkesson, Linköping*
-
-    Har genomfört små videoproduktionsjobb när jag har tid. Exempelvis producerat #link("https://youtu.be/6crEb-zywoE", "marknadsföringsfilmer för Discgolf Värnamo") och #link("https://youtu.be/niDWR77UgDo", "musikvideo för bandet Island Country").
-  ],
-
-  [juni 2020 - juni 2024],
-  [
-    *IT-drift, Campus Värnamo, Värnamo*
-
-    Återkommande sommaruppdrag att formatera lånade studentdatorer. Efter varje sommar hade jag uppdaterat skripten som körs på varje nyformaterad dator så att ännu större del av processen automatiseras. Man kan säga att jag gjorde mig själv obsolet.
-  ],
-
-  [maj 2021 - maj 2023],
-  [
-    *Projektmedarbetare, Bolmsö sockenråd, Bolmsö*
-
-    Var invald styrelseledamot. Initierade och fullbordade projekt att övergå till WordPress för #link("https://bolmso.se")[hemsidan].
-  ],
-)
-
-#v(1fr)
-#align(center)[
-  Referenser utlämnas på begäran.
 ]
