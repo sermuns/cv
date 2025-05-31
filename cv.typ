@@ -12,6 +12,16 @@
 
 #show heading: set block(below: 0.7em)
 
+#set document(title: [CV Samuel Åkesson], author: "Samuel Åkesson")
+#set page(numbering: "1 / 1", margin: (y: 1.6cm, x: 1.7cm))
+#set text(font: "HK Grotesk", lang: "sv", size: 10pt)
+#show link: text.with(weight: 600)
+
+#show heading: set block(below: 1em)
+#show heading.where(level: 2): text.with(black.lighten(20%))
+
+#set par(leading: 0.9em, spacing: 1.3em)
+
 #show link: it => {
   set text(fill: blue.darken(50%))
   underline(it)
@@ -20,6 +30,7 @@
 #{
   show grid: box
   show image: box
+  set par(spacing: 0.5em)
 
   box(height: 2.0cm, {
     text(2em, context strong(document.title))
@@ -31,9 +42,12 @@
       columns: 2,
       row-gutter: 1fr,
       column-gutter: .5em,
-      image("media/phone-svgrepo-com.svg", height: 1em), "072 205 83 84",
+      image("media/phone-svgrepo-com.svg", height: 1em), [072 205 83 84],
       image("media/mail-svgrepo-com.svg", height: 1em),
-      "samuel.akesson@bolmso.se",
+      [samuel.akesson\@bolmso.se],
+
+      image("media/globe-svgrepo-com.svg", height: 1em),
+      link("https://samake.se", "samake.se"),
 
       image("media/github-mark.svg", height: 1em),
       link("https://github.com/sermuns", "github.com/sermuns"),
