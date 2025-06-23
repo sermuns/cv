@@ -48,7 +48,7 @@
 = Kort om mig
 Studerar just mitt tredje år civilingenjör i datateknik på Linköpings universitet. På min fritid håller jag för det mesta på med programmeringsprojekt. När jag kan, spelar jag musik med mitt band #link("https://open.spotify.com/artist/5yXcXACdusyyXLrYX5S36x", "Skaran").
 
-Vad motiverar mig? Projekt som känns meningsfulla, speciellt när jag känner att jag förbättrar livet (för mig och andra). Jag tycker det är fantastiskt att skapa robusta system som underlättar och automatiserar tråkiga sysslor. Detta är också anledningen till varför jag valde min utbildning.
+Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förbättrar livet, både för andra och mig själv. Jag tycker det är speciellt roligt att skapa robusta system som underlättar och automatiserar tråkiga sysslor. Detta är också anledningen till varför jag valde min utbildning.
 
 = Utbildning <utbildning>
 #grid(
