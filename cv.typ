@@ -11,6 +11,7 @@
 #show link: text.with(weight: 600)
 
 #show heading.where(level: 2): text.with(black.lighten(20%))
+#show heading: set block(below: 0.7em)
 
 #show link: it => {
   set text(fill: blue.darken(60%))
@@ -59,6 +60,12 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
 
 = Projekt
 #grid(
+  [jul 2025 - nu],
+  [
+    #link("https://picodocs.samake.se")[*picodocs*]
+
+    Open-source projekt jag driver. En statisk sidgenerator för dokumentation. Den är skriven i Rust och genererar HTML-sidor från Markdown-filer. Den är designad att ersätta MkDocs med tillägget 'Material for MkDocs'.
+  ],
   [jan 2025 - jun 2025],
   [
     *TIDIG: _Tidsredovisningssystem för Digitaliseringsavdelningen på LiU_*
@@ -73,20 +80,6 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
     ]
 
     Sekreterare i styrelsen. Skapare och underhållare av #link("https://www.lysator.liu.se/")[nya hemsidan]. Är  del av rootgruppen som ansvarar för driften av servrar och tjänster.
-  ],
-
-  // [dec 2024 - jan 2025],
-  // [
-  //   #link("https://www.lysator.liu.se/~sermuns/checkboxes/")[128 checkboxes]
-  //
-  //   Hemsida som efterliknar "One Million Checkboxes". Jag skapade den mest för att lära mig om Go på backend.
-  // ],
-
-  [dec 2024 - nu],
-  [
-    #link("https://github.com/sermuns/schemgo")[schemgo]
-
-    Open-source projekt som jag driver. Jag var frusterad med befintliga alternativ för att generera elektriska kretsdiagram från kod, så jag uppfann ett eget verktyg. Fortfarande under uppbyggnad.
   ],
 
   [okt 2024 - jan 2025],
@@ -154,15 +147,17 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
 
 = Programmeringsspråk / teknologier
 
-- *Python* är högst upp i min verktygslåda. Både när jag snabbt vill lösa problem. Jag älskar Pydantic och FastAPI!
+- *Python* är högst upp i min verktygslåda när jag snabbt vill lösa problem. Jag älskar Pydantic och FastAPI!
 
-- *Go* stötte jag på förra året och blev förälskad i. Jag har använt det i många av mina sidoprojekt sedan dess. Det bara funkar!
+- *Rust* ligger också numera högt upp i min verktygslåda, främst för att skapa ultra-optimala, långtida lösningar.
+
+- *Go* är jag bekväm i. Men vem är inte det!
 
 - *C* använder jag flitigt för mina hårdvaruprojekt med mikrokontrollrar.
 
 - *HTML* och *CSS* är jag väldigt bekväm med och har skapat flertalet hemsidor från grunden.
 
-- Jag brukade tycka om *LaTeX*, och är fortfarande bekväm med det. Om jag får välja själv använder jag numera *Typst* för typsättning- det är en fröjd att få designa dokument i!
+- Jag brukade tycka om *LaTeX*, och är fortfarande bekväm med det. Om jag får välja själv använder jag numera *Typst* för typsättning- det är en fröjd att få designa dokument i. Exempelvis detta CV!
 
 - *docker* är jag väldigt bekväm med. Har erfarenhet av att skapa effektiva, minifierade images och van vid att skriva konfigurationer för *docker compose*.
 
@@ -172,7 +167,6 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
 - Svenska, modersmål.
 - Engelska, flytande.
 - Tyska, goda kunskaper.
-
 
 #v(1fr)
 
