@@ -1,7 +1,7 @@
 #let inl-img(src) = box(baseline: 22%, image(src, height: 1.3em))
 
 #set document(title: [CV - Samuel Åkesson], author: "Samuel Åkesson")
-#set page(numbering: "1 / 1", margin: (y: 1.0cm, x: 1.7cm))
+#set page(numbering: "1 / 1", margin: 1.7cm)
 #set text(font: "HK Grotesk", lang: "sv", size: 11pt)
 #set par(leading: 0.8em, spacing: 1em, justify: true)
 #set pagebreak(weak: true)
@@ -10,11 +10,10 @@
 
 #show link: text.with(weight: 600)
 
-#show heading.where(level: 2): text.with(black.lighten(20%))
 #show heading: set block(below: 0.7em)
 
 #show link: it => {
-  set text(fill: blue.darken(60%))
+  set text(fill: blue.darken(50%))
   underline(it)
 }
 
@@ -22,10 +21,10 @@
   show grid: box
   show image: box
 
-  box(height: 2.2cm, {
+  box(height: 2.0cm, {
     text(2em, context strong(document.title))
     h(1fr)
-    image("media/jag.jpg", height: 100%)
+    image("media/jag.jpg")
     h(1fr)
     grid(
       align: left + horizon,
@@ -68,15 +67,20 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
   ],
   [jan 2025 - jun 2025],
   [
-    *TIDIG: _Tidsredovisningssystem för Digitaliseringsavdelningen på LiU_*
+    #link(
+      "https://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-215278",
+    )[
+      #inl-img("./media/tidig.svg")
+      *TIDIG: Tidsredovisningssystem för Digitaliseringsavdelningen på LiU*
+    ]
 
-    Som kandidatarbete skapade vi i storskaligt mjukvaruteam en webbapplikation för universitetet. Som konfigurationsansvarig stöttade jag mina medlemmar med utvecklingsmiljö, versionshantering och satte upp majoriteten av CI/CD-pipelines samt Docker-baserad driftsättningsmiljö.
+    Kandidatarbete: arbetade i storskaligt mjukvaruteam och skapade webbapplikation för universitetet. Som konfigurationsansvarig stöttade jag mina medlemmar med utvecklingsmiljö, versionshantering och satte upp majoriteten av CI/CD-flöden samt Docker-baserad driftsättningsmiljö.
   ],
 
   [maj 2024 - nu],
   [
     #link("https://www.lysator.liu.se/")[
-      #inl-img("media/lyslogo.svg") Datorföreningen Lysator
+      #inl-img("media/lyslogo.svg") *Datorföreningen Lysator*
     ]
 
     Sekreterare i styrelsen. Skapare och underhållare av #link("https://www.lysator.liu.se/")[nya hemsidan]. Är  del av rootgruppen som ansvarar för driften av servrar och tjänster.
@@ -98,7 +102,7 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
 
   [okt 2023 - dec 2023],
   [
-    #link("http://un.samake.se")[un.samake.se]
+    #link("http://un.samake.se")[*un.samake.se*]
 
     Hemsida som skrapar universitets schema-API. På hemsidan kan LiU-studenter kan se hur många föreläsningar/lektioner/m.m. som har passerat i en viss kurs.
   ],
@@ -108,14 +112,14 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
 #grid(
   [jun 2025 - aug 2025],
   [
-    *Summer trainee, Kalmar Solutions AB*
+    #inl-img("media/kalmar.png") *Summer trainee, Kalmar Solutions AB*
 
-    Analyserar minnesanvändning på fordons inbyggda system
+    Minskade ROM-användning och exekveringstid på truckarnas inbyggda system genom avduplicering och förenkling av kod samt experiment med kompilatorflaggor till `gcc-arm-none-eabi`.
   ],
 
   [feb 2023 - jun 2025],
   [
-    *Lärare, MTU - Mediagymnasiet, Linköping*
+    #inl-img("media/mtu-ikon.png") *Lärare, MTU - Mediagymnasiet, Linköping*
 
     Undervisade Mekatronik 1 på gymnasiet. Här fick jag använda mina kompetenser inom digitalteknik, mikroprocessorer och elektronik.
     - Ansvarade för lektionsplanering, skapande av kurslitteratur och examinationsmoment.
@@ -132,9 +136,11 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
 
   [juni 2020 - juni 2024],
   [
-    *IT-drift, Campus Värnamo, Värnamo*
+    #inl-img("media/campus.png") *IT-drift, Campus Värnamo, Värnamo*
 
-    Återkommande sommaruppdrag att formatera lånade studentdatorer. Efter varje sommar hade jag uppdaterat skripten som körs på varje nyformaterad dator så att ännu större del av processen automatiseras. Man kan säga att jag gjorde mig själv obsolet.
+    Hade återkommande sommaruppdrag att formatera lånade studentdatorer.
+
+    Efter varje sommar hade jag uppdaterat skripten som körs på varje nyformaterad dator så att ännu större del av processen automatiseras. Man kan säga att jag gjorde mig själv obsolet.
   ],
 
   // [maj 2021 - maj 2023],
