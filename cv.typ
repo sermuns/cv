@@ -61,7 +61,9 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
 #grid(
   [jul 2025 - nu],
   [
-    #link("https://picodocs.samake.se")[*picodocs*]
+    #inl-img("media/picodocs.svg") #link(
+      "https://picodocs.samake.se",
+    )[*picodocs*]
 
     Open-source projekt jag driver. En statisk sidgenerator för dokumentation. Den är skriven i Rust och genererar HTML-sidor från Markdown-filer. Den är designad att ersätta MkDocs med tillägget 'Material for MkDocs'.
   ],
