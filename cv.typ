@@ -97,7 +97,9 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
 
   [feb 2024 - maj 2024],
   [
-    #link("https://github.com/sermuns/monkey-computer")[*`monkey computer`*]
+    #link(
+      "https://github.com/sermuns/monkey-computer",
+    )[#inl-img("media/monkey-computer.png") *`monkey computer`*]
 
     Inom kursen #link("https://studieinfo.liu.se/kurs/tsea83/vt-2018#syllabus", "Datorkonstruktion") designade och implementerade gruppen en processor från grunden i VHDL. Till processorn utvecklade jag ett assembly-liknande språk med tillhörande kompilator och emulator, och VS Code-tillägg för syntax highlighting.
   ],
