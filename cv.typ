@@ -1,12 +1,12 @@
-#let inl-img(src) = box(baseline: 22%, image(src, height: 1.3em))
+#let inl-img(src) = box(baseline: 20%, image(src, height: 1.3em))
 
 #set document(title: [CV - Samuel Åkesson], author: "Samuel Åkesson")
 #set page(numbering: "1 / 1", margin: 1.7cm)
-#set text(font: "HK Grotesk", lang: "sv", size: 11pt)
-#set par(leading: 0.8em, spacing: 1em, justify: true)
+#set text(font: "PT Sans", lang: "sv", size: 11pt)
+#set par(leading: 0.8em, spacing: 1.2em)
 #set pagebreak(weak: true)
 
-#show raw: set text(font: "JetBrains Mono", size: 10pt)
+#show raw: set text(font: "MonaspiceKr NFM", size: 10pt)
 
 #show link: text.with(weight: 600)
 
@@ -30,7 +30,7 @@
       align: left + horizon,
       columns: 2,
       row-gutter: 1fr,
-      column-gutter: 1em,
+      column-gutter: .5em,
       image("media/phone-svgrepo-com.svg", height: 1em), "072 205 83 84",
       image("media/mail-svgrepo-com.svg", height: 1em),
       "samuel.akesson@bolmso.se",
@@ -43,9 +43,10 @@
 }
 
 #set grid(row-gutter: 1.5em, columns: (3fr, 10fr))
+#show grid: set par(spacing: 0.8em)
 
 = Kort om mig
-Studerar just mitt tredje år civilingenjör i datateknik på Linköpings universitet. På min fritid håller jag för det mesta på med programmeringsprojekt. När jag kan, spelar jag musik med mitt band #link("https://open.spotify.com/artist/5yXcXACdusyyXLrYX5S36x", "Skaran").
+Studerar fjärde år civilingenjör i datateknik på Linköpings universitet. På min fritid programmerar jag. När jag kan, spelar jag musik med mitt band #link("https://open.spotify.com/artist/5yXcXACdusyyXLrYX5S36x", "Skaran").
 
 Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förbättrar livet, både för andra och mig själv. Jag tycker det är speciellt roligt att skapa robusta system som underlättar och automatiserar tråkiga sysslor. Detta är också anledningen till varför jag valde min utbildning.
 
@@ -99,7 +100,7 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
   [
     #link(
       "https://github.com/sermuns/monkey-computer",
-    )[#inl-img("media/monkey-computer.png") *`monkey computer`*]
+    )[#inl-img("media/monkey-computer.png") *monkey computer*]
 
     Inom kursen #link("https://studieinfo.liu.se/kurs/tsea83/vt-2018#syllabus", "Datorkonstruktion") designade och implementerade gruppen en processor från grunden i VHDL. Till processorn utvecklade jag ett assembly-liknande språk med tillhörande kompilator och emulator, och VS Code-tillägg för syntax highlighting.
   ],
@@ -108,7 +109,7 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
   [
     #link("http://un.samake.se")[*un.samake.se*]
 
-    Hemsida som skrapar universitets schema-API. På hemsidan kan LiU-studenter kan se hur många föreläsningar/lektioner/m.m. som har passerat i en viss kurs.
+    Hemsida som skrapar universitets schema-API. På hemsidan kan LiU-studenter se hur många föreläsningar/lektioner/m.m. som har passerat i en viss kurs.
   ],
 )
 #pagebreak()
@@ -131,13 +132,6 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
     - Har designat #link("https://mek.samake.se/", "digital kurslitteratur och uppgifter från grunden").
   ],
 
-  // [okt 2021 - nu],
-  // [
-  //   *Enskild firma, Samuel Åkesson, Linköping*
-  //
-  //   Har genomfört små videoproduktionsjobb när jag har tid. Exempelvis producerat #link("https://youtu.be/6crEb-zywoE", "marknadsföringsfilmer för Discgolf Värnamo") och #link("https://youtu.be/niDWR77UgDo", "musikvideo för bandet Island Country").
-  // ],
-
   [juni 2020 - juni 2024],
   [
     #inl-img("media/campus.png") *IT-drift, Campus Värnamo, Värnamo*
@@ -146,13 +140,6 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
 
     Efter varje sommar hade jag uppdaterat skripten som körs på varje nyformaterad dator så att ännu större del av processen automatiseras. Man kan säga att jag gjorde mig själv obsolet.
   ],
-
-  // [maj 2021 - maj 2023],
-  // [
-  //   *Projektmedarbetare, Bolmsö sockenråd, Bolmsö*
-  //
-  //   Var invald styrelseledamot. Initierade och fullbordade projekt att övergå till WordPress för #link("https://bolmso.se")[hemsidan].
-  // ],
 )
 
 = Programmeringsspråk / teknologier
