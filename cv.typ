@@ -1,26 +1,36 @@
-#let inl-img(src) = box(baseline: 20%, image(src, height: 1.3em))
+#let inl-img(src) = box(
+  baseline: 22%,
+  inset: (right: .5em),
+  image(src, height: 1.3em),
+)
 
-#set document(title: [CV - Samuel Åkesson], author: "Samuel Åkesson")
-#set page(numbering: "1 / 1", margin: 1.7cm)
-#set text(font: "PT Sans", lang: "sv", size: 11pt)
-#set par(leading: 0.8em, spacing: 1.2em)
+#set document(
+  title: [CV - Samuel Åkesson],
+  author: "Samuel Åkesson",
+)
+#set page(
+  // numbering: "1 / 1",
+  margin: (x: 1.5cm, y: 1.2cm),
+)
 #set pagebreak(weak: true)
-
-#show raw: set text(font: "MonaspiceKr NFM", size: 10pt)
+#show link: text.with(weight: 600)
+#set text(
+  font: "Hanken Grotesk",
+  lang: "sv",
+  size: 10pt,
+)
+#show raw: it => context {
+  set text(
+    font: "MonaspiceKr NFM",
+    size: text.size,
+  )
+  it
+}
 
 #show link: text.with(weight: 600)
 
-#show heading: set block(below: 0.7em)
-
-#set document(title: [CV Samuel Åkesson], author: "Samuel Åkesson")
-#set page(numbering: "1 / 1", margin: (y: 1.6cm, x: 1.7cm))
-#set text(font: "HK Grotesk", lang: "sv", size: 10pt)
-#show link: text.with(weight: 600)
-
-#show heading: set block(below: 1em)
-#show heading.where(level: 2): text.with(black.lighten(20%))
-
-#set par(leading: 0.9em, spacing: 1.3em)
+#show heading: set block(below: .8em, above: 1.8em)
+#set par(leading: 1em, spacing: 1.3em, justify: true)
 
 #show link: it => {
   set text(fill: blue.darken(50%))
@@ -30,8 +40,6 @@
 #{
   show grid: box
   show image: box
-  set par(spacing: 0.5em)
-
   box(height: 2.0cm, {
     text(2em, context strong(document.title))
     h(1fr)
@@ -55,34 +63,22 @@
   })
   line(length: 100%)
 }
-
-#set grid(row-gutter: 1.5em, columns: (3fr, 10fr))
+#set grid(row-gutter: 1.5em, columns: (1fr, 5fr))
 #show grid: set par(spacing: 0.8em)
-
-= Kort om mig
-Studerar fjärde år civilingenjör i datateknik på Linköpings universitet. På min fritid programmerar jag. När jag kan, spelar jag musik med mitt band #link("https://open.spotify.com/artist/5yXcXACdusyyXLrYX5S36x", "Skaran").
-
-Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förbättrar livet, både för andra och mig själv. Jag tycker det är speciellt roligt att skapa robusta system som underlättar och automatiserar tråkiga sysslor. Detta är också anledningen till varför jag valde min utbildning.
+Studerar fjärde år Civilingenjör i datateknik på Linköpings universitet. På min fritid programmerar jag, helst med öppen källkod.
+Jag tycker om att skapa robusta system som underlättar och automatiserar tråkiga sysslor. Detta är också anledningen till varför jag valde min utbildning.
 
 = Utbildning <utbildning>
 #grid(
-  [aug 2022 - nu],
+  [aug 22 - ],
   [*Civilingenjör datateknik, Linköpings universitet*],
-  [aug 2018 - juni 2021],
+  [aug 18 - juni 21],
   [*Teknikprogrammet, Sunnerbogymnasiet*],
 )
 
 = Projekt
 #grid(
-  [jul 2025 - nu],
-  [
-    #inl-img("media/picodocs.svg") #link(
-      "https://picodocs.samake.se",
-    )[*picodocs*]
-
-    Open-source projekt jag driver. En statisk sidgenerator för dokumentation. Den är skriven i Rust och genererar HTML-sidor från Markdown-filer. Den är designad att ersätta MkDocs med tillägget 'Material for MkDocs'.
-  ],
-  [jan 2025 - jun 2025],
+  [jan 25 - jun 25],
   [
     #link(
       "https://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-215278",
@@ -91,26 +87,19 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
       *TIDIG: Tidsredovisningssystem för Digitaliseringsavdelningen på LiU*
     ]
 
-    Kandidatarbete: arbetade i storskaligt mjukvaruteam och skapade webbapplikation för universitetet. Som konfigurationsansvarig stöttade jag mina medlemmar med utvecklingsmiljö, versionshantering och satte upp majoriteten av CI/CD-flöden samt Docker-baserad driftsättningsmiljö.
+    Kandidatarbete. Arbetade i storskaligt mjukvaruteam och skapade webbapplikation för universitetet. Som konfigurationsansvarig stöttade jag mina medlemmar med utvecklingsmiljö, versionshantering och satte upp majoriteten av CI/CD-flöden samt Docker-baserad driftsättningsmiljö.
   ],
 
-  [maj 2024 - nu],
+  [maj 24 - ],
   [
     #link("https://www.lysator.liu.se/")[
       #inl-img("media/lyslogo.svg") *Datorföreningen Lysator*
     ]
 
-    Sekreterare i styrelsen. Skapare och underhållare av #link("https://www.lysator.liu.se/")[nya hemsidan]. Är  del av rootgruppen som ansvarar för driften av servrar och tjänster.
+    Skapare och underhållare av #link("https://www.lysator.liu.se/")[nya hemsidan]. Sekreterare i styrelsen. Är del av rootgruppen som ansvarar för driften av servrar och tjänster.
   ],
 
-  [okt 2024 - jan 2025],
-  [
-    *Kartläggningsrobot*
-
-    Skapade i grupp en robot som autonomt kartlägger rum. Projektarbete som del av kursen #link("https://studieinfo.liu.se/kurs/TSEA29/#syllabus")[Konstruktion med mikrodatorer].
-  ],
-
-  [feb 2024 - maj 2024],
+  [feb 24 - maj 24],
   [
     #link(
       "https://github.com/sermuns/monkey-computer",
@@ -119,68 +108,34 @@ Vad driver mig? Projekt som känns meningsfulla, när jag känner att jag förb�
     Inom kursen #link("https://studieinfo.liu.se/kurs/tsea83/vt-2018#syllabus", "Datorkonstruktion") designade och implementerade gruppen en processor från grunden i VHDL. Till processorn utvecklade jag ett assembly-liknande språk med tillhörande kompilator och emulator, och VS Code-tillägg för syntax highlighting.
   ],
 
-  [okt 2023 - dec 2023],
+  [okt 23 - dec 23],
   [
     #link("http://un.samake.se")[*un.samake.se*]
 
     Hemsida som skrapar universitets schema-API. På hemsidan kan LiU-studenter se hur många föreläsningar/lektioner/m.m. som har passerat i en viss kurs.
   ],
 )
-#pagebreak()
 = Yrkeserfarenhet
 #grid(
-  [jun 2025 - aug 2025],
+  [jun 25 - aug 25],
   [
     #inl-img("media/kalmar.png") *Summer trainee, Kalmar Solutions AB*
 
     Minskade ROM-användning och exekveringstid på truckarnas inbyggda system genom avduplicering och förenkling av kod samt experiment med kompilatorflaggor till `gcc-arm-none-eabi`.
   ],
 
-  [feb 2023 - jun 2025],
+  [feb 23 - jun 25],
   [
     #inl-img("media/mtu-ikon.png") *Lärare, MTU - Mediagymnasiet, Linköping*
 
-    Undervisade Mekatronik 1 på gymnasiet. Här fick jag använda mina kompetenser inom digitalteknik, mikroprocessorer och elektronik.
+    Undervisade Mekatronik 1 (digitalteknik, mikrokontroller, elektronik) på gymnasiet.
     - Ansvarade för lektionsplanering, skapande av kurslitteratur och examinationsmoment.
     - Handledde eleverna genom både teoretiska och praktiska moment.
-    - Har designat #link("https://mek.samake.se/", "digital kurslitteratur och uppgifter från grunden").
-  ],
-
-  [juni 2020 - juni 2024],
-  [
-    #inl-img("media/campus.png") *IT-drift, Campus Värnamo, Värnamo*
-
-    Hade återkommande sommaruppdrag att formatera lånade studentdatorer.
-
-    Efter varje sommar hade jag uppdaterat skripten som körs på varje nyformaterad dator så att ännu större del av processen automatiseras. Man kan säga att jag gjorde mig själv obsolet.
+    - Skapade #link("https://mek.samake.se/", "digital kurslitteratur och uppgifter").
   ],
 )
-
-= Programmeringsspråk / teknologier
-
-- *Python* är högst upp i min verktygslåda när jag snabbt vill lösa problem. Jag älskar Pydantic och FastAPI!
-
-- *Rust* ligger också numera högt upp i min verktygslåda, främst för att skapa ultra-optimala, långtida lösningar.
-
-- *Go* är jag bekväm i. Men vem är inte det!
-
-- *C* använder jag flitigt för mina hårdvaruprojekt med mikrokontrollrar.
-
-- *HTML* och *CSS* är jag väldigt bekväm med och har skapat flertalet hemsidor från grunden.
-
-- Jag brukade tycka om *LaTeX*, och är fortfarande bekväm med det. Om jag får välja själv använder jag numera *Typst* för typsättning- det är en fröjd att få designa dokument i. Exempelvis detta CV!
-
-- *docker* är jag väldigt bekväm med. Har erfarenhet av att skapa effektiva, minifierade images och van vid att skriva konfigurationer för *docker compose*.
-
-- *Puppet*, eller numera *OpenVox* har jag vana av att använda, eftersom det används i Lysators infrastruktur vid konfiguration av servrar.
 
 = Människospråk
 - Svenska, modersmål.
 - Engelska, flytande.
 - Tyska, goda kunskaper.
-
-#v(1fr)
-
-Referenser lämnas på begäran.
-
-#v(1em)
