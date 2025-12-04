@@ -65,8 +65,8 @@
 }
 #set grid(row-gutter: 1.5em, columns: (1fr, 5fr))
 #show grid: set par(spacing: 0.8em)
-Studerar fjärde år Civilingenjör i datateknik på Linköpings universitet. På min fritid programmerar jag, helst med öppen källkod.
-Jag tycker om att skapa robusta system som underlättar och automatiserar tråkiga sysslor. Detta är också anledningen till varför jag valde min utbildning.
+Studerar fjärde år Civilingenjör i datateknik på Linköpings universitet. På min fritid programmerar jag, helst öppen källkod.
+Jag tycker om att skapa system som underlättar och automatiserar tråkiga sysslor. Detta är också anledningen till varför jag valde min utbildning.
 
 = Utbildning <utbildning>
 #grid(
@@ -78,6 +78,15 @@ Jag tycker om att skapa robusta system som underlättar och automatiserar tråki
 
 = Projekt
 #grid(
+  [jul 25 -],
+  [
+    #link("https://github.com/sermuns/MEREAD")[
+
+      *MEREAD*
+    ]
+
+    Öppen-källkod kommandoradsverktyg för att rendera Markdown README:s på samma sätt som GitHub gör. Skriven i Rust #inl-img("media/cuddlyferris.svg").
+  ],
   [jan 25 - jun 25],
   [
     #link(
@@ -96,7 +105,7 @@ Jag tycker om att skapa robusta system som underlättar och automatiserar tråki
       #inl-img("media/lyslogo.svg") *Datorföreningen Lysator*
     ]
 
-    Skapare och underhållare av #link("https://www.lysator.liu.se/")[nya hemsidan]. Sekreterare i styrelsen. Är del av rootgruppen som ansvarar för driften av servrar och tjänster.
+    Har skapat, och underhållar #link("https://www.lysator.liu.se/")[den nya hemsidan]. Är sekreterare i styrelsen. Är del av rootgruppen som ansvarar för driften av servrar och tjänster.
   ],
 
   [feb 24 - maj 24],
@@ -105,14 +114,7 @@ Jag tycker om att skapa robusta system som underlättar och automatiserar tråki
       "https://github.com/sermuns/monkey-computer",
     )[#inl-img("media/monkey-computer.png") *monkey computer*]
 
-    Inom kursen #link("https://studieinfo.liu.se/kurs/tsea83/vt-2018#syllabus", "Datorkonstruktion") designade och implementerade gruppen en processor från grunden i VHDL. Till processorn utvecklade jag ett assembly-liknande språk med tillhörande kompilator och emulator, och VS Code-tillägg för syntax highlighting.
-  ],
-
-  [okt 23 - dec 23],
-  [
-    #link("http://un.samake.se")[*un.samake.se*]
-
-    Hemsida som skrapar universitets schema-API. På hemsidan kan LiU-studenter se hur många föreläsningar/lektioner/m.m. som har passerat i en viss kurs.
+    Inom kursen #link("https://studieinfo.liu.se/kurs/tsea83/vt-2018#syllabus", "Datorkonstruktion (TSEA83)") designade och implementerade gruppen en processor i VHDL. Till processorn utvecklade vi ett assembly-liknande språk med tillhörande kompilator. Jag utvecklade en emulator, och VS Code-tillägg för syntax highlighting.
   ],
 )
 = Yrkeserfarenhet
@@ -134,8 +136,3 @@ Jag tycker om att skapa robusta system som underlättar och automatiserar tråki
     - Skapade #link("https://mek.samake.se/", "digital kurslitteratur och uppgifter").
   ],
 )
-
-= Människospråk
-- Svenska, modersmål.
-- Engelska, flytande.
-- Tyska, goda kunskaper.
