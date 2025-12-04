@@ -1,24 +1,19 @@
-#let inl-img(src) = box(
-  baseline: 22%,
-  inset: (right: .5em),
-  image(src, height: 1.3em),
-)
-
 #set document(
   title: [CV - Samuel Åkesson],
   author: "Samuel Åkesson",
 )
-#set page(
-  // numbering: "1 / 1",
-  margin: (x: 1.5cm, y: 1.2cm),
-)
-#set pagebreak(weak: true)
-#show link: text.with(weight: 600)
+#set page(margin: 2cm)
 #set text(
   font: "Hanken Grotesk",
   lang: "sv",
   size: 10pt,
 )
+#show heading: set block(below: .8em, above: 1fr)
+#set par(leading: 1em, spacing: 1.3em, justify: true)
+#show link: it => {
+  set text(fill: blue.darken(50%), weight: 600)
+  underline(it)
+}
 #show raw: it => context {
   set text(
     font: "MonaspiceKr NFM",
@@ -27,15 +22,11 @@
   it
 }
 
-#show link: text.with(weight: 600)
-
-#show heading: set block(below: .8em, above: 1.8em)
-#set par(leading: 1em, spacing: 1.3em, justify: true)
-
-#show link: it => {
-  set text(fill: blue.darken(50%))
-  underline(it)
-}
+#let inl-img(src) = box(
+  baseline: 22%,
+  inset: (right: .5em),
+  image(src, height: 1.3em),
+)
 
 #{
   show grid: box
@@ -52,7 +43,7 @@
       column-gutter: .5em,
       image("media/phone-svgrepo-com.svg", height: 1em), [072 205 83 84],
       image("media/mail-svgrepo-com.svg", height: 1em),
-      [samuel.akesson\@bolmso.se],
+      [sermuns\@lysator.liu.se],
 
       image("media/globe-svgrepo-com.svg", height: 1em),
       link("https://samake.se", "samake.se"),
