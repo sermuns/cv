@@ -16,7 +16,7 @@
 }
 #show raw: it => context {
   set text(
-    font: "MonaspiceKr NFM",
+    font: "Monaspace Krypton",
     size: text.size,
   )
   it
